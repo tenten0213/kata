@@ -9,6 +9,8 @@ import java.io.Serializable;
  */
 @Data
 public class Driver implements Serializable {
+
+    /** 月の利用回数 */
     private int countPerMonth;
 
     public int getCountPerMonth() {

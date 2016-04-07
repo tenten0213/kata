@@ -10,10 +10,20 @@ import java.time.LocalDateTime;
  */
 @Data
 public class HighwayDrive implements Serializable {
+
+    /** 高速道路利用開始時刻 */
     private LocalDateTime enteredAt;
+
+    /**高速道路利用終了時刻 */
     private LocalDateTime exitedAt;
+
+    /** 車種 */
     private VehicleFamily vehicleFamily;
+
+    /** 経路タイプ */
     private RouteType routeType;
+
+    /** ドライバ */
     private Driver driver;
 
     public LocalDateTime getEnteredAt() {
